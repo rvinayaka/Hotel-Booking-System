@@ -1,0 +1,1298 @@
+WARNING:2023-04-05 10:44:37,333:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:44:37,590:app:Error occurred: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.UndefinedColumn: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+
+ERROR:2023-04-05 10:44:37,590:app:Error occurred: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.UndefinedColumn: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+
+WARNING:2023-04-05 10:44:37,593:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:44:37,593:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:44:37,593:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:44:37,593:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.UndefinedColumn: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 115, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedColumn is not JSON serializable
+ERROR:2023-04-05 10:44:37,593:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.UndefinedColumn: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 115, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedColumn is not JSON serializable
+ERROR:2023-04-05 10:44:37,593:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.UndefinedColumn: column "details" does not exist
+LINE 1: SELECT * FROM hotel WHERE details[0] = 'Naruto';
+                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 115, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedColumn is not JSON serializable
+WARNING:2023-04-05 10:45:15,465:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:45:15,685:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+ERROR:2023-04-05 10:45:15,685:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+WARNING:2023-04-05 10:45:15,688:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:45:15,688:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:45:15,688:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:45:15,688:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 115, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:45:15,688:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 115, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:45:15,688:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 107, in search_guests
+    cur.execute(show_query, (name, ))
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 115, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+WARNING:2023-04-05 10:48:27,829:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:48:28,074:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+ERROR:2023-04-05 10:48:28,074:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+WARNING:2023-04-05 10:48:28,077:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:48:28,077:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:48:28,077:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:48:28,077:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:48:28,077:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:48:28,077:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+WARNING:2023-04-05 10:48:48,066:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:48:48,067:app:Error occurred: not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, name)
+TypeError: not all arguments converted during string formatting
+ERROR:2023-04-05 10:48:48,067:app:Error occurred: not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, name)
+TypeError: not all arguments converted during string formatting
+WARNING:2023-04-05 10:48:48,070:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:48:48,070:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:48:48,070:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:48:48,071:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, name)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+ERROR:2023-04-05 10:48:48,071:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, name)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+ERROR:2023-04-05 10:48:48,071:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, name)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+WARNING:2023-04-05 10:49:16,791:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:49:17,314:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+ERROR:2023-04-05 10:49:17,314:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+WARNING:2023-04-05 10:49:17,317:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:49:17,317:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:49:17,317:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:49:17,317:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:49:17,317:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:49:17,317:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+WARNING:2023-04-05 10:50:15,944:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:50:16,161:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+ERROR:2023-04-05 10:50:16,161:app:Error occurred: cannot subscript type details because it is not an array
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+WARNING:2023-04-05 10:50:16,164:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:50:16,164:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:50:16,164:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:50:16,164:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:50:16,164:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+ERROR:2023-04-05 10:50:16,164:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.DatatypeMismatch: cannot subscript type details because it is not an array
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type DatatypeMismatch is not JSON serializable
+WARNING:2023-04-05 10:51:31,150:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:51:31,415:app:Error occurred: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+ERROR:2023-04-05 10:51:31,415:app:Error occurred: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+WARNING:2023-04-05 10:51:31,418:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:51:31,418:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:51:31,418:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:51:31,419:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+ERROR:2023-04-05 10:51:31,419:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+ERROR:2023-04-05 10:51:31,419:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+WARNING:2023-04-05 10:52:24,550:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:52:24,760:app:Error occurred: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+ERROR:2023-04-05 10:52:24,760:app:Error occurred: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+WARNING:2023-04-05 10:52:24,762:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:52:24,762:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:52:24,762:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:52:24,762:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+ERROR:2023-04-05 10:52:24,762:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+ERROR:2023-04-05 10:52:24,762:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details ->> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details ->> 'name' = 'Naruto...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+WARNING:2023-04-05 10:52:46,435:app:Starting the db connection to display all guests in the list
+ERROR:2023-04-05 10:52:46,938:app:Error occurred: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+ERROR:2023-04-05 10:52:46,938:app:Error occurred: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+WARNING:2023-04-05 10:52:46,941:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:52:46,941:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 10:52:46,941:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 10:52:46,942:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+ERROR:2023-04-05 10:52:46,942:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+ERROR:2023-04-05 10:52:46,942:app:Exception on /search/Naruto [GET]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 110, in search_guests
+    cur.execute(show_query, value)
+psycopg2.errors.UndefinedFunction: operator does not exist: details -> unknown
+LINE 1: SELECT * FROM hotel WHERE guest_details -> 'name' = 'Naruto'...
+                                                ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in search_guests
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type UndefinedFunction is not JSON serializable
+WARNING:2023-04-05 11:03:38,215:app:Starting the db connection to update booking status of rooms in the list
+ERROR:2023-04-05 11:03:38,215:app:Error occurred: tuple index out of range
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 111, in booking_status
+    cur.execute(update_query, (status, ))
+IndexError: tuple index out of range
+ERROR:2023-04-05 11:03:38,215:app:Error occurred: tuple index out of range
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 111, in booking_status
+    cur.execute(update_query, (status, ))
+IndexError: tuple index out of range
+WARNING:2023-04-05 11:03:38,216:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:03:38,216:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:03:38,216:app:Hence details displayed, closing the connection
+ERROR:2023-04-05 11:03:38,216:app:Exception on /status/101 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 111, in booking_status
+    cur.execute(update_query, (status, ))
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in booking_status
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type IndexError is not JSON serializable
+ERROR:2023-04-05 11:03:38,216:app:Exception on /status/101 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 111, in booking_status
+    cur.execute(update_query, (status, ))
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in booking_status
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type IndexError is not JSON serializable
+ERROR:2023-04-05 11:03:38,216:app:Exception on /status/101 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 111, in booking_status
+    cur.execute(update_query, (status, ))
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 118, in booking_status
+    return jsonify({"message": error})
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type IndexError is not JSON serializable
+WARNING:2023-04-05 11:04:04,330:app:Starting the db connection to update booking status of rooms in the list
+INFO:2023-04-05 11:04:04,537:app:Status updated of room no. 101
+INFO:2023-04-05 11:04:04,537:app:Status updated of room no. 101
+WARNING:2023-04-05 11:04:04,537:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:04,537:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:04,537:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:30,819:app:Starting the db connection to display all guests in the list
+WARNING:2023-04-05 11:04:30,819:app:Starting the db connection to display all guests in the list
+WARNING:2023-04-05 11:04:30,819:app:Starting the db connection to display all guests in the list
+WARNING:2023-04-05 11:04:30,819:app:Starting the db connection to display all guests in the list
+INFO:2023-04-05 11:04:31,021:app:Displayed list of all guests in the list
+INFO:2023-04-05 11:04:31,021:app:Displayed list of all guests in the list
+INFO:2023-04-05 11:04:31,021:app:Displayed list of all guests in the list
+INFO:2023-04-05 11:04:31,021:app:Displayed list of all guests in the list
+INFO:2023-04-05 11:04:31,021:app:Displayed list of all guests in the list
+WARNING:2023-04-05 11:04:31,022:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:31,022:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:31,022:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:31,022:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:31,022:app:Hence details displayed, closing the connection
+WARNING:2023-04-05 11:04:31,022:app:Hence details displayed, closing the connection
