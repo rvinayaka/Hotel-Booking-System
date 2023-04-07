@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from conn import connection
-from settings import logger
+from settings import logger, handle_exceptions
 import psycopg2
 
 app = Flask(__name__)
@@ -24,31 +24,6 @@ app = Flask(__name__)
 #   1 | (Naruto,5552304,"LEAF village")  |     101 | 2023-04-05 | 2023-04-10 | booked
 #   3 | (Chiraku,2224123,"Sand Village") |     102 | 2022-08-15 | 2022-09-19 | booked
 #   2 | (Hinata,9004114,"Water Village") |     102 | 2022-09-12 | 2022-12-09 | booked
-
-
-def handle_exceptions(func):
-    def wrapper(*args, **kwargs):
-        try:
-            return func(*args, **kwargs)
-        except psycopg2.Error as error:
-            conn = kwargs.get('conn')
-            if conn:
-                conn.rollback()
-            logger(__name__).error(f"Error occurred: {error}")
-            return jsonify({"message": f"Error occurred: {error}"})
-        except Exception as error:
-            logger(__name__).error(f"Error occurred: {error}")
-            return jsonify({"message": f"Error occurred: {error}"})
-        finally:
-            conn = kwargs.get("conn")
-            cur = kwargs.get("cur")
-            # close the database connection
-            if conn:
-                conn.close()
-            if cur:
-                cur.close()
-            logger(__name__).warning("Closing the connection")
-    return wrapper
 
 
 
