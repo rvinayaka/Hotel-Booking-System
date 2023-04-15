@@ -1302,3 +1302,399 @@ INFO:2023-04-05 12:42:16,826:app:Displayed list of all guests in the list
 WARNING:2023-04-05 12:42:16,828:app:Closing the connection
 WARNING:2023-04-05 12:42:16,828:app:Closing the connection
 WARNING:2023-04-05 12:42:16,828:app:Closing the connection
+WARNING:2023-04-14 13:50:47,003:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 13:50:47,004:settings:Hence account created, closing the connection
+ERROR:2023-04-14 13:50:47,004:app:Exception on /rooms [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 88, in add_room_details
+    cur.execute(add_query, values)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 13:54:07,709:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 13:54:07,709:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 13:54:07,710:settings:Hence account created, closing the connection
+WARNING:2023-04-14 13:54:07,710:settings:Hence account created, closing the connection
+ERROR:2023-04-14 13:54:07,710:app:Exception on /rooms [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 88, in add_room_details
+    cur.execute(add_query, values)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-14 13:54:07,710:app:Exception on /rooms [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 88, in add_room_details
+    cur.execute(add_query, values)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 13:54:19,174:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 13:54:19,466:settings:Hence account created, closing the connection
+ERROR:2023-04-14 13:54:19,467:app:Exception on /rooms [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 88, in add_room_details
+    cur.execute(add_query, values)
+psycopg2.errors.UndefinedColumn: column "guest_id" of relation "hotel" does not exist
+LINE 1: INSERT INTO hotel(room_id, guest_id, room_type, status)VALUE...
+                                   ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 15:00:59,125:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:00:59,998:settings:Hence account created, closing the connection
+ERROR:2023-04-14 15:00:59,998:app:Exception on /rooms [POST]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 88, in add_room_details
+    cur.execute(add_query, values)
+psycopg2.errors.UndefinedColumn: column "guest_id" of relation "hotel" does not exist
+LINE 1: INSERT INTO hotel(room_id, guest_id, room_type, status)VALUE...
+                                   ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 15:01:38,260:app:Starting the db connection to add guests in room_id in the rooms table
+INFO:2023-04-14 15:01:38,626:app:Guest with id 1 has been shifted to room id 101
+INFO:2023-04-14 15:01:38,626:app:Guest with id 1 has been shifted to room id 101
+WARNING:2023-04-14 15:01:38,626:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:02:17,186:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:02:17,186:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:02:17,186:app:Starting the db connection to add guests in room_id in the rooms table
+INFO:2023-04-14 15:02:17,454:app:Guest with id 2 has been shifted to room id 102
+INFO:2023-04-14 15:02:17,454:app:Guest with id 2 has been shifted to room id 102
+INFO:2023-04-14 15:02:17,454:app:Guest with id 2 has been shifted to room id 102
+INFO:2023-04-14 15:02:17,454:app:Guest with id 2 has been shifted to room id 102
+WARNING:2023-04-14 15:02:17,455:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:02:17,455:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:02:42,830:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:02:42,830:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:02:42,830:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:02:42,830:app:Starting the db connection to add guests in room_id in the rooms table
+WARNING:2023-04-14 15:02:42,830:app:Starting the db connection to add guests in room_id in the rooms table
+INFO:2023-04-14 15:02:43,245:app:Guest with id 3 has been shifted to room id 103
+INFO:2023-04-14 15:02:43,245:app:Guest with id 3 has been shifted to room id 103
+INFO:2023-04-14 15:02:43,245:app:Guest with id 3 has been shifted to room id 103
+INFO:2023-04-14 15:02:43,245:app:Guest with id 3 has been shifted to room id 103
+INFO:2023-04-14 15:02:43,245:app:Guest with id 3 has been shifted to room id 103
+INFO:2023-04-14 15:02:43,245:app:Guest with id 3 has been shifted to room id 103
+WARNING:2023-04-14 15:02:43,246:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:02:43,246:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:02:43,246:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:18:07,783:app:Starting the db connection to display all guests in the list
+INFO:2023-04-14 15:18:08,397:app:Displayed list of all guests in the list
+INFO:2023-04-14 15:18:08,397:app:Displayed list of all guests in the list
+WARNING:2023-04-14 15:18:08,398:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:18:21,789:app:Starting the db connection to display all guests in the list
+WARNING:2023-04-14 15:18:21,789:app:Starting the db connection to display all guests in the list
+WARNING:2023-04-14 15:18:21,789:app:Starting the db connection to display all guests in the list
+INFO:2023-04-14 15:18:21,957:app:Displayed list of all guests in the list
+INFO:2023-04-14 15:18:21,957:app:Displayed list of all guests in the list
+INFO:2023-04-14 15:18:21,957:app:Displayed list of all guests in the list
+INFO:2023-04-14 15:18:21,957:app:Displayed list of all guests in the list
+WARNING:2023-04-14 15:18:21,958:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:18:21,958:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:20:12,037:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:20:12,037:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:20:12,037:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:20:12,037:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:20:12,037:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:20:12,037:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:20:12,037:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:20:12,037:settings:Hence account created, closing the connection
+ERROR:2023-04-14 15:20:12,038:app:Exception on /rooms/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 220, in update_room_details
+    cur.execute("SELECT * from rooms where room_id = %s", (id,))
+psycopg2.ProgrammingError: can't adapt type 'builtin_function_or_method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-14 15:20:12,038:app:Exception on /rooms/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 220, in update_room_details
+    cur.execute("SELECT * from rooms where room_id = %s", (id,))
+psycopg2.ProgrammingError: can't adapt type 'builtin_function_or_method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-14 15:20:12,038:app:Exception on /rooms/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 220, in update_room_details
+    cur.execute("SELECT * from rooms where room_id = %s", (id,))
+psycopg2.ProgrammingError: can't adapt type 'builtin_function_or_method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-14 15:20:12,038:app:Exception on /rooms/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 220, in update_room_details
+    cur.execute("SELECT * from rooms where room_id = %s", (id,))
+psycopg2.ProgrammingError: can't adapt type 'builtin_function_or_method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+ERROR:2023-04-14 15:20:12,038:app:Exception on /rooms/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 220, in update_room_details
+    cur.execute("SELECT * from rooms where room_id = %s", (id,))
+psycopg2.ProgrammingError: can't adapt type 'builtin_function_or_method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 15:21:14,275:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:21:14,486:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:22:23,297:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:22:23,518:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:24:26,695:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:24:27,012:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:25:10,262:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:25:11,009:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:25:46,565:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:25:47,179:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:25:55,738:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:25:55,738:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:25:56,108:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:25:56,108:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:26:31,474:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:26:31,749:settings:Hence account created, closing the connection
+ERROR:2023-04-14 15:26:31,750:app:Exception on /rooms/101 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 237, in update_room_details
+    cur.execute("UPDATE rooms SET room_type = %s WHERE id = %s", (room_type, id))
+psycopg2.ProgrammingError: can't adapt type 'builtin_function_or_method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 15:27:30,653:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:27:31,105:settings:Hence account created, closing the connection
+ERROR:2023-04-14 15:27:31,105:app:Exception on /rooms/101 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/app.py", line 237, in update_room_details
+    cur.execute("UPDATE rooms SET room_type = %s WHERE id = %s", (room_type, room_id))
+psycopg2.errors.UndefinedColumn: column "id" does not exist
+LINE 1: UPDATE rooms SET room_type = 'triple' WHERE id = 101
+                                                    ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113451/Desktop/VS Code/Oops/Hotel/settings.py", line 32, in wrapper
+    except psycopg2.Error as error:
+NameError: name 'psycopg2' is not defined
+WARNING:2023-04-14 15:27:55,535:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:27:56,926:app:Details updated: {'room_type': 'triple', 'status': 'cleaning done'}
+INFO:2023-04-14 15:27:56,926:app:Details updated: {'room_type': 'triple', 'status': 'cleaning done'}
+WARNING:2023-04-14 15:27:56,927:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:37:05,656:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:37:06,020:app:Details updated: {'room_type': 'triple', 'status': 'cleaning done'}
+INFO:2023-04-14 15:37:06,020:app:Details updated: {'room_type': 'triple', 'status': 'cleaning done'}
+WARNING:2023-04-14 15:37:06,021:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:37:34,308:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:37:35,580:app:Details updated: {'room_type': 'triple', 'status': 'cleaning done'}
+INFO:2023-04-14 15:37:35,580:app:Details updated: {'room_type': 'triple', 'status': 'cleaning done'}
+WARNING:2023-04-14 15:37:35,581:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:39:12,470:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:39:12,470:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:39:12,470:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:39:13,150:app:Details updated: {'room_type': 'double', 'status': 'cleaning done'}
+INFO:2023-04-14 15:39:13,150:app:Details updated: {'room_type': 'double', 'status': 'cleaning done'}
+INFO:2023-04-14 15:39:13,150:app:Details updated: {'room_type': 'double', 'status': 'cleaning done'}
+INFO:2023-04-14 15:39:13,150:app:Details updated: {'room_type': 'double', 'status': 'cleaning done'}
+WARNING:2023-04-14 15:39:13,150:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:39:13,150:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:41:25,478:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:41:25,478:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:41:25,478:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:41:25,478:app:Starting the db connection to update the details 
+WARNING:2023-04-14 15:41:25,478:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:41:27,251:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:41:27,251:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:41:27,251:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:41:27,251:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:41:27,251:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:41:27,251:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+WARNING:2023-04-14 15:41:27,252:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:41:27,252:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:41:27,252:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:43:23,026:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:43:25,040:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:43:25,040:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+WARNING:2023-04-14 15:43:25,041:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:45:05,676:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:45:07,031:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:45:07,031:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+WARNING:2023-04-14 15:45:07,032:settings:Hence account created, closing the connection
+WARNING:2023-04-14 15:46:08,507:app:Starting the db connection to update the details 
+INFO:2023-04-14 15:46:08,892:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+INFO:2023-04-14 15:46:08,892:app:Details updated: {'room_type': 'double', 'status': 'cleaning'}
+WARNING:2023-04-14 15:46:08,893:settings:Hence account created, closing the connection
